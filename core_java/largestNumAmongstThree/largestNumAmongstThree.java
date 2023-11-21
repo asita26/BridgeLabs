@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class largestNum{
+public class largestNumAmongstThree{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -15,15 +15,16 @@ public class largestNum{
 
         if(num1>num2)
         {
-           if(num1>num3) System.out.println("Largest number is third given number"+num3);
-           else System.out.println("Largest number is first given number"+num1);
+           if(num1>num3) System.out.println("Largest number is first given number "+num1);
+           else System.out.println("Largest number is third given number "+num3);
            
         }
         else
         {
-         if(num2>num3) System.out.println("Largest number is third given number"+num3);
-           else System.out.println("Largest number is second given numbrt"+num2);
+         if(num2>num3) System.out.println("Largest number is second given number "+num2);
+           else System.out.println("Largest number is third given number "+num3);
         }
     }
 }
+
 

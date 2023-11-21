@@ -6,7 +6,7 @@ public class flipCoins {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number of times to flip the coin: ");
         
-        int numbFlips = scanner.nextInt();
+        int numFlips = scanner.nextInt();
     
         if (numFlips <= 0) {
             System.out.println("Please enter a positive integer for the number of flips.");
@@ -17,7 +17,7 @@ public class flipCoins {
         int hdCount = 0, tlCount = 0;
         Random random = new Random();
 
-        for (int i = 0; i < numberOfFlips; i++) {
+        for (int i = 0; i < numFlips; i++) {
             double randomVal = random.nextDouble();
             if (randomVal < 0.5) {
                 hdCount++;
@@ -27,11 +27,10 @@ public class flipCoins {
         }
 
         double percentageHeads = (hdCount * 100.0) / numFlips;
-        double percentageTails = (tlCount * 100.0) / numbFlips;
+        double percentageTails = (tlCount * 100.0) / numFlips;
 
-        System.out.println("Percentage of Heads: " + percentageHeads + 
-"%");
-        System.out.println("Percentage of Tails: " + percentageTails + 
-"%");
+        System.out.println("Percentage of Heads: " + percentageHeads + "%");
+        System.out.println("Percentage of Tails: " + percentageTails + "%");
     }
 }
+
